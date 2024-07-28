@@ -153,14 +153,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="framebuffers.cpp" />
+    <ClCompile Include="deferredShading.cpp" />
     <ClCompile Include="shader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\framebuffers.fs" />
-    <None Include="shader\framebuffers.vs" />
-    <None Include="shader\light_cube.fs" />
-    <None Include="shader\light_cube.vs" />
+    <None Include="shader\deferred_shading.fs" />
+    <None Include="shader\deferred_shading.vs" />
+    <None Include="shader\g_buffer.fs" />
+    <None Include="shader\g_buffer.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\awesomeface.png" />

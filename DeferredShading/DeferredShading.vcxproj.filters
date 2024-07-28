@@ -44,7 +44,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="framebuffers.cpp">
+    <ClCompile Include="deferredShading.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="shader.cpp">
@@ -55,16 +55,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\framebuffers.fs">
+    <None Include="shader\deferred_shading.fs">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\framebuffers.vs">
+    <None Include="shader\deferred_shading.vs">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\light_cube.fs">
+    <None Include="shader\g_buffer.fs">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\light_cube.vs">
+    <None Include="shader\g_buffer.vs">
       <Filter>资源文件\shader</Filter>
     </None>
   </ItemGroup>
