@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6e3cf2d2-f6eb-4ded-9a10-b8208a671be1}</ProjectGuid>
-    <RootNamespace>DeferredShading</RootNamespace>
+    <ProjectGuid>{170a6c44-f4bd-441c-8ec4-9f9d0846c30b}</ProjectGuid>
+    <RootNamespace>SSAO</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DeferredShading</ProjectName>
+    <ProjectName>SSAO</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -152,27 +152,21 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SSAO.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="deferredShading.cpp" />
     <ClCompile Include="shader.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="shader\deferred_lighting_cube.frag">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="shader\deferred_lighting_cube.vs" />
-    <None Include="shader\g_buffer.frag">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="shader\g_buffer.vs" />
-    <None Include="shader\deferred_shading.frag">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="shader\deferred_shading.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\awesomeface.png" />
     <Image Include="resource\container.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\deferred_lighting_cube.frag" />
+    <None Include="shader\deferred_lighting_cube.vs" />
+    <None Include="shader\deferred_shading.frag" />
+    <None Include="shader\deferred_shading.vs" />
+    <None Include="shader\g_buffer.frag" />
+    <None Include="shader\g_buffer.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
