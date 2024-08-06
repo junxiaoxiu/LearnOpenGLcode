@@ -75,7 +75,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath) {
 	glGetProgramiv(ID, GL_LINK_STATUS, &success);
 	if (!success) {
 		glGetProgramInfoLog(ID, 512, NULL, infoLog);
-		std::cout << "ERROR:SHADER::LINKING_FAILED\n"
+		std::cout << "ERROR:SHADER::FRAGMENT::LINKING_FAILED\n"
 			<< infoLog << std::endl;
 	}
 

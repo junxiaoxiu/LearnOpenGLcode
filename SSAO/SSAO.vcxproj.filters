@@ -44,35 +44,15 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="deferredShading.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="shader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="shader\g_buffer.frag">
-      <Filter>资源文件\shader</Filter>
-    </None>
-    <None Include="shader\g_buffer.vs">
-      <Filter>资源文件\shader</Filter>
-    </None>
-    <None Include="shader\deferred_shading.frag">
-      <Filter>资源文件\shader</Filter>
-    </None>
-    <None Include="shader\deferred_shading.vs">
-      <Filter>资源文件\shader</Filter>
-    </None>
-    <None Include="shader\deferred_lighting_cube.frag">
-      <Filter>资源文件\shader</Filter>
-    </None>
-    <None Include="shader\deferred_lighting_cube.vs">
-      <Filter>资源文件\shader</Filter>
-    </None>
+    <ClCompile Include="SSAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\awesomeface.png">
@@ -81,5 +61,25 @@
     <Image Include="resource\container.jpg">
       <Filter>资源文件\resource</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\deferred_lighting_cube.frag">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\deferred_lighting_cube.vs">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\deferred_shading.frag">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\deferred_shading.vs">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\g_buffer.frag">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\g_buffer.vs">
+      <Filter>资源文件\shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
