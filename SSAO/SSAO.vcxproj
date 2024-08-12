@@ -161,12 +161,14 @@
     <Image Include="resource\container.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\deferred_lighting_cube.frag" />
-    <None Include="shader\deferred_lighting_cube.vs" />
-    <None Include="shader\deferred_shading.frag" />
-    <None Include="shader\deferred_shading.vs" />
-    <None Include="shader\g_buffer.frag" />
-    <None Include="shader\g_buffer.vs" />
+    <None Include="shader\ssao_lighting.frag" />
+    <None Include="shader\ssao_lighting.vs" />
+    <None Include="shader\ssao_blur.frag" />
+    <None Include="shader\ssao_blur.vs" />
+    <None Include="shader\ssao_geometry.frag" />
+    <None Include="shader\ssao_geometry.vs" />
+    <None Include="shader\ssao.frag" />
+    <None Include="shader\ssao.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -63,22 +63,28 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\deferred_lighting_cube.frag">
+    <None Include="shader\ssao_lighting.frag">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\deferred_lighting_cube.vs">
+    <None Include="shader\ssao_lighting.vs">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\deferred_shading.frag">
+    <None Include="shader\ssao_geometry.frag">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\deferred_shading.vs">
+    <None Include="shader\ssao_geometry.vs">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\g_buffer.frag">
+    <None Include="shader\ssao.frag">
       <Filter>资源文件\shader</Filter>
     </None>
-    <None Include="shader\g_buffer.vs">
+    <None Include="shader\ssao.vs">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\ssao_blur.frag">
+      <Filter>资源文件\shader</Filter>
+    </None>
+    <None Include="shader\ssao_blur.vs">
       <Filter>资源文件\shader</Filter>
     </None>
   </ItemGroup>
