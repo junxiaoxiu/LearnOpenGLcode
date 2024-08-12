@@ -7,7 +7,7 @@ in vec2 TexCoords;
 in vec3 FragPos;
 in vec3 Normal;
 
-const float NEAR = 0.1;
+const float NEAR = 0.1f;
 const float FAR  = 50.0f;
 
 float LinearizeDepth(float depth) {
